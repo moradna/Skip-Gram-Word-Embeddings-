@@ -31,7 +31,7 @@ The model learns from a corpus of English sentences and creates vector represent
 ```python
 from SkipGram import SkipGram, normalize_text
 
-sentences = normalize_text("data/corpus.txt")
+sentences = normalize_text("corpus.txt")
 sg = SkipGram(sentences)
 sg.learn_embeddings()
 print(sg.get_closest_words("king"))
