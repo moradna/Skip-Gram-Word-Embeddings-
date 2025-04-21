@@ -15,6 +15,15 @@ The model learns from a corpus of English sentences and creates vector represent
   - Finding most similar words
   - Word analogy tasks (e.g., king - man + woman ≈ queen)
 
+
+---
+
+## 📁 Files
+
+- `SkipGram.py` – Main implementation of the Skip-Gram model with negative sampling, training logic, and embedding functions.
+- `Tester.py` – Script for testing functionality: computing similarities, finding analogies, etc.
+- `corpus.txt` – Text file containing the raw corpus used for training the model.
+- `model.pkl` – Saved model (via pickle), created after training for future use (can be loaded using `load_model()`).
 ---
 
 ## ✨ Example Usage
@@ -27,10 +36,4 @@ sg = SkipGram(sentences)
 sg.learn_embeddings()
 print(sg.get_closest_words("king"))
 
----
-## 📁 Files
 
-- `SkipGram.py` – Main implementation of the Skip-Gram model with negative sampling, training logic, and embedding functions.
-- `Tester.py` – Script for testing functionality: computing similarities, finding analogies, etc.
-- `corpus.txt` – Text file containing the raw corpus used for training the model.
-- `model.pkl` – Saved model (via pickle), created after training for future use (can be loaded using `load_model()`).
